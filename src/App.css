@@ -1,0 +1,684 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  font-weight: 100;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #fefefe;
+  color: #093028;
+  gap: 50px;
+  height: 100vh;
+  background: url("/public/media/sign.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media (max-width: 480px) {
+  .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.login img {
+  display: inherit;
+  height: 40vh;
+}
+
+@media (max-width: 768px) {
+  .login img {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .login img {
+    height: 20vh;
+  }
+}
+
+.login #LoginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  height: 80%;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .login #LoginForm {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login #LoginForm {
+    gap: 10px;
+    height: 30vh;
+  }
+}
+
+.login #LoginForm h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .login #LoginForm h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login #LoginForm h1 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+.login #LoginForm h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .login #LoginForm h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login #LoginForm h2 {
+    font-size: 13px;
+  }
+}
+
+.login #LoginForm #username,
+.login #LoginForm #loginBtn {
+  padding: 10px;
+  margin: 3px;
+  color: #093028;
+}
+
+@media (max-width: 768px) {
+  .login #LoginForm #username,
+  .login #LoginForm #loginBtn {
+    padding: 5px;
+  }
+}
+
+.login #LoginForm #loginBtn {
+  font-size: 15px;
+  background-color: #093028;
+  color: #fefefe;
+  border-radius: 6px;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .login #LoginForm div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+  }
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  #app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#app #online {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fefefe;
+  background-color: #093028;
+  width: 15vw;
+}
+
+@media (max-width: 768px) {
+  #app #online {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #app #online {
+    height: 20vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+#app #online #asideNaslov {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+#app #online #asideNaslov div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 10px;
+  gap: 4px;
+}
+
+#app #online #asideNaslov div img {
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  #app #online #asideNaslov div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+  }
+  #app #online #asideNaslov div img {
+    height: 20px;
+  }
+  #app #online #asideNaslov div h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #app #online #asideNaslov div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+  }
+  #app #online #asideNaslov div h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+#app #online ul {
+  list-style-type: none;
+}
+
+#app #online ul li {
+  padding: 5px;
+  color: #fefefe;
+}
+
+@media (max-width: 768px) {
+  #app #online ul li {
+    padding: 3px;
+    font-size: 12px;
+  }
+}
+
+#app #online ul li .onlineDot {
+  color: #31a24c;
+  margin-right: 6px;
+}
+
+#app #online #asideBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#app #online #asideBottom a {
+  color: #fefefe;
+  background-color: rebeccapurple;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+#app #online #asideBottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #app #online #asideBottom a {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+
+
+#app #chat-area {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url('../public/media/chatbackground.jpg');
+}
+
+@media (max-width: 480px) {
+  #app #chat-area {
+    height: 80vh;
+  }
+}
+
+#app #chat-area h3 {
+  background-color: #FDEDEC ;
+  padding: 20px;
+  width: 100vw;
+}
+
+@media (max-width: 480px) {
+  #app #chat-area h3 {
+    width: 100vw;
+  }
+}
+
+#app #chat-area h3 span {
+  font-weight: 600;
+}
+
+#app #chat-area #messages {
+  width: 100%;
+  padding: 10px;
+}
+
+#app #chat-area #messages .container {
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  height: 100%;
+  align-items: flex-start;
+}
+
+#app #chat-area #messages .container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 8px 0px 8px 8px;
+  padding: 10px;
+  margin: 5px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #messages .container li {
+    font-size: 12px;
+    padding: 5px;
+    height: 50px;
+    margin-right: 2vw;
+  }
+}
+
+#app #chat-area #messages .container li svg {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #messages .container li svg {
+    height: 35px;
+  }
+}
+
+#app #chat-area #messages .container li #messageInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#app #chat-area #messages .container li #messageInfo small {
+  padding-left: 3px;
+}
+
+#app #chat-area #messages .container li #messageInfo div:nth-of-type(1),
+#app #chat-area #messages .container li #messageInfo span {
+  font-weight: bold;
+}
+
+#app #chat-area #messages .container li #messageInfo #messageBody div {
+  padding: 2px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #messages .container li #messageInfo #messageBody div {
+    padding-left: 5px;
+  }
+}
+
+#app #chat-area #messages .container .sent {
+  background-color:#BDC3C7  ;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: white;
+  border-radius: 8px 0px 8px 8px;
+}
+
+#app #chat-area #messages .container .received {
+  background-color: #BDC3C7 ;
+  color: black;
+  border-radius: 0px 8px 8px 8px;
+}
+
+#app #chat-area #messages .container small {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #messages .container small {
+    height: 8px;
+  }
+}
+
+#app #chat-area #inputMsg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  color: #093028;
+  width: 90%;
+}
+
+#app #chat-area #inputMsg input,
+#app #chat-area #inputMsg button {
+  padding: 10px;
+  font-size: 15px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #inputMsg input,
+  #app #chat-area #inputMsg button {
+    padding: 15px;
+    font-size: 13px;
+    height: 30px;
+  }
+}
+
+#app #chat-area #inputMsg input {
+  width: 50vw;
+}
+
+#app #chat-area #inputMsg button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #093028;
+  width: 10vw;
+  color: #fefefe;
+  border-radius: 6px;
+  border: none;
+}
+
+#app #chat-area #inputMsg button img {
+  height: 25px;
+}
+
+@media (max-width: 768px) {
+  #app #chat-area #inputMsg button img {
+    height: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  #app #chat-area #inputMsg button img {
+    height: 13px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
